@@ -13,8 +13,34 @@ import fastClick from 'fastclick' //300毫秒点击延迟问题的解决方案�
 fastClick.attach(document.body);//fastclick自带的一个方法
 
 //vant
-import { Button } from 'vant';
-Vue.use(Button);
+import { 
+  Button,
+  NavBar,
+  Field,
+  Checkbox,
+  Tab,
+  Tabs,
+  Tabbar, 
+  TabbarItem,
+  Icon,
+  Cell,
+  Tag,
+  Panel,
+  Search
+} from 'vant';
+Vue.use(Button)
+   .use(NavBar)
+   .use(Field)
+   .use(Checkbox)
+   .use(Tab)
+   .use(Tabs)
+   .use(Tabbar)
+   .use(TabbarItem)
+   .use(Icon)
+   .use(Cell)
+   .use(Tag)
+   .use(Panel)
+   .use(Search);
 
 
 
