@@ -8,6 +8,9 @@ Vue.config.productionTip = false
 //引入重置css样式
 import "./assets/style/resets.css"
 
+//引入自定义图标文件
+import "./assets/font/iconfont.css";
+
 import fastClick from 'fastclick' //300毫秒点击延迟问题的解决方案（尤其是移动端）优化用户体验
 
 fastClick.attach(document.body);//fastclick自带的一个方法
@@ -30,7 +33,16 @@ import {
   Popup,
   Divider,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
+  ActionSheet,
+  RadioGroup, 
+  Radio,
+  IndexBar, 
+  IndexAnchor,
+  Col, 
+  Row,
+  Swipe, 
+  SwipeItem
 } from 'vant';
 Vue.use(Button)
    .use(NavBar)
@@ -48,7 +60,16 @@ Vue.use(Button)
    .use(Popup)
    .use(Divider)
    .use(DropdownMenu)
-   .use(DropdownItem);
+   .use(DropdownItem)
+   .use(ActionSheet)
+   .use(RadioGroup)
+   .use(Radio)
+   .use(IndexBar)
+   .use(IndexAnchor)
+   .use(Col)
+   .use(Row)
+   .use(Swipe)
+   .use(SwipeItem);
 
 
 

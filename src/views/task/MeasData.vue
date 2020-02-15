@@ -70,7 +70,8 @@ export default {
       }
     }
     .content{
-        height: 100%;
+        min-height: 100%;
+        height: auto;
         box-sizing: border-box;
         padding: 0.36rem 0.24rem 0rem;
     }

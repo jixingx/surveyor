@@ -52,7 +52,7 @@ export default {
     },
     methods: {
         onClickLeft() {
-            this.$router.push('/login');
+            this.$router.go(-1);
         },
         tz(){
             this.$router.push('/rebuildpsd')
