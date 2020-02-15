@@ -9,7 +9,7 @@
                     :src="props.active ? icon1.active : icon1.inactive"
                 >
             </van-tabbar-item>
-            <van-tabbar-item name="classroom" to="/classroom">
+            <van-tabbar-item name="task" to="/task">
                 <span>任务</span>
                 <img 
                     slot="icon"
@@ -17,7 +17,7 @@
                     :src="props.active ? icon2.active : icon2.inactive"
                 >
             </van-tabbar-item>
-            <van-tabbar-item name="task" to="/task">
+            <van-tabbar-item name="reward" to="/reward">
                 <span>奖励</span>
                 <img 
                     slot="icon"
@@ -25,7 +25,7 @@
                     :src="props.active ? icon3.active : icon3.inactive"
                 >
             </van-tabbar-item>
-            <van-tabbar-item name="find" to="/find">
+            <van-tabbar-item name="my" to="/my">
                 <span>我的</span>
                 <img 
                     slot="icon"
@@ -44,18 +44,18 @@ export default {
         return {
             icon1:{
                 active:require("../../assets/images/tab/xx_active.png"),
-                inactive:require("../../assets/images/tab/xx_active.png")
+                inactive:require("../../assets/images/tab/xx.png")
             },
             icon2:{
-                active:require("../../assets/images/tab/rw.png"),
+                active:require("../../assets/images/tab/rw_active.png"),
                 inactive:require("../../assets/images/tab/rw.png")
             },
             icon3:{
-                active:require("../../assets/images/tab/jl.png"),
+                active:require("../../assets/images/tab/jl_active.png"),
                 inactive:require("../../assets/images/tab/jl.png")
             },
             icon4:{
-                active:require("../../assets/images/tab/wd.png"),
+                active:require("../../assets/images/tab/wd_active.png"),
                 inactive:require("../../assets/images/tab/wd.png")
             },
             active: '0'

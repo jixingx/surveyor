@@ -1,12 +1,15 @@
 <template>
     <div class="mytab">
-        <van-tabs v-model="active" 
-        background="transparent"
-        :border="false"
-        color="#28B28B"
-        line-width="8%"
-        title-active-color="#333333"
-        title-inactive-color="#999999"
+        <van-tabs 
+            v-model="active" 
+            :background="background"
+            :border="false"
+            color="#28B28B"
+            line-width="8%"
+            title-active-color="#333333"
+            title-inactive-color="#999999"
+            :offset-top="46"
+            sticky
         >
             <van-tab :title="title1">
                 <slot name="content1"></slot>
@@ -34,6 +37,10 @@ export default {
      },
      title2:{
          type:String
+     },
+     background:{
+         type:String,
+         default:"#F7F7F7"
      }
  }
 }

@@ -10,6 +10,11 @@ import RebuildPsd from "../views/Login/RebuildPsd.vue";//重设密码
 import Home from "../views/home/Home.vue";//消息首页
 import NoticeDetails from "../views/home/NoticeDetails.vue";//消息详情
 import Search from "../views/home/Search.vue";//搜索
+import Task from "../views/task/Task.vue";//任务
+import TaskDetails from "../views/task/TaskDetails.vue";//任务详情
+import MeasData from "../views/task/MeasData.vue";//测量数据
+import Reward from "../views/reward/Reward.vue";//测量数据
+import My from "../views/my/My.vue";//测量数据
 
 Vue.use(VueRouter)
 
@@ -37,6 +42,11 @@ const routes = [
   { path: '/home',name:'home' ,component: Home },
   { path: '/noticedetails',name:'noticedetails' ,component: NoticeDetails },
   { path: '/search',name:'search' ,component: Search },
+  { path: '/task',name:'task' ,component: Task },
+  { path: '/taskdetails',name:'taskdetails' ,component: TaskDetails },
+  { path: '/measdata',name:'measdata' ,component: MeasData },
+  { path: '/reward',name:'reward' ,component: Reward },
+  { path: '/my',name:'my' ,component: My },
 ]
 
 const router = new VueRouter({

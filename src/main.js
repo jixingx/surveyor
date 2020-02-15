@@ -26,7 +26,11 @@ import {
   Cell,
   Tag,
   Panel,
-  Search
+  Search,
+  Popup,
+  Divider,
+  DropdownMenu,
+  DropdownItem
 } from 'vant';
 Vue.use(Button)
    .use(NavBar)
@@ -40,7 +44,11 @@ Vue.use(Button)
    .use(Cell)
    .use(Tag)
    .use(Panel)
-   .use(Search);
+   .use(Search)
+   .use(Popup)
+   .use(Divider)
+   .use(DropdownMenu)
+   .use(DropdownItem);
 
 
 
